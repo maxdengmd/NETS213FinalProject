@@ -1,4 +1,4 @@
-"# NETS213FinalProject" 
+# NETS213FinalProject
 1. Content Aggregation: go through YouTube and get links for top 25 pop songs and timing clips for what we want crowd to sing. We also need to find a platform that the crowd can record their hums into (1)
 2. Quality Control Module 1: Go through all the songs and make sure they have a viable chorus (can users mimic the tune of the chorus?) (1)
 3. Aggregation Module: Once finalize the content, we upload these video links and timing clips onto MTurk along with the voice recording link (Vocaroo) and wait for responses. (2)
