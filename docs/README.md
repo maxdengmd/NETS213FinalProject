@@ -16,6 +16,7 @@ Quality Control Module for verifying crowdwork:
 - In the src directory, you'll find a screenshot and text file of the QC template we will be using on Mechanical Turk
 - Similar to what we did in class, we have two controls, one negative and one positive.
 - We will be using a weighted majority vote.
+- In the instance where we only have two workers that pass the qc control labels, and if their responses result in a tie between whether a sample resembles a song or not, we will denote it as "Yes" because we want as much data as possible.
 - To determine whether a worker is qualifiable or not, he or she must select "Yes" for the positive quality control and "No" for the negative quality control
 - We justify this qualification because workers must be able to tell whether songs resemble the original or not to set up an accurate database
 - Each recording will be listened to 3 times, and the good samples will be allowed to pass for aggregation
