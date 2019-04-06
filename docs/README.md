@@ -11,3 +11,13 @@
 7. ML Training: Create a training data set, of audio being the data and song being the label. (2)
 8. Final Product: When someone uses our app, they will provide their own rendition of the song, and we will standardize, normalize, and feature extract the data and we will use k-nearest neighbors to figure out the predictive label.(4)
   **Milestone: Final Product**
+
+Quality Control Module:
+- In the src directory, you'll find a screenshot and text file of the template we will be using on Mechanical Turk.
+- Similar to what we did in class, we have two controls, one negative and one positive.
+- We will be using a weighted majority vote.
+- To determine whether a worker is qualifiable or not, he or she must select "Yes" for the positive quality control and "No" for the negative quality control
+- We justify this qualification because workers must be able to tell whether songs resemble the original or not to set up an accurate database
+- Each recording will be listened to 3 times, and the good samples will be allowed to pass for aggregation
+- Hopefully, this will give us at least 40 samples to use
+
