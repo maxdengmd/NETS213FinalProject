@@ -1,0 +1,54 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+    
+    <h3>Instructions</h3>
+    <p>Given the following original song, determine whether an audio file resembles that song</p>
+    <p>If the audio file resembles the song then select "yes", otherwise if not select "no" </p>
+    <p>If the recording quality (such as white noise) is not good then select the "no" option</p>
+    <p>Please click the following links and listen to both of them</p>
+
+    <b>Original Song:</b>
+    <p><a href="https://www.youtube.com/watch?v=AgFeZr5ptV8">https://www.youtube.com/watch?v=AgFeZr5ptV8</a></p>
+    
+    
+    <b>Example 1:</b>
+    <p><a href="https://vocaroo.com/i/s0XRY9x1KlOe">https://vocaroo.com/i/s0XRY9x1KlOe</a></p>
+    <form action="/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike"> Yes<br>
+  <input type="checkbox" name="vehicle2" value="Car"> No<br><br>
+    
+    <b>Example 2:</b>
+    <p><a href="https://vocaroo.com/i/s0XRY9x1KlOe">https://vocaroo.com/i/s0XRY9x1KlOe</a></p>
+    <form action="/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike"> Yes<br>
+  <input type="checkbox" name="vehicle2" value="Car"> No<br><br>
+    
+    <b>Example 3:</b>
+    <p><a href="https://vocaroo.com/i/s0XRY9x1KlOe">https://vocaroo.com/i/s0XRY9x1KlOe</a></p>
+    <form action="/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike"> Yes<br>
+  <input type="checkbox" name="vehicle2" value="Car"> No<br><br>
+  
+    <b>Example 4:</b>
+    <p><a href="https://vocaroo.com/i/s0XRY9x1KlOe">https://vocaroo.com/i/s0XRY9x1KlOe</a></p>
+    <form action="/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike"> Yes<br>
+  <input type="checkbox" name="vehicle2" value="Car"> No<br><br>
+  
+    <b>Example 5:</b>
+    <p><a href="https://vocaroo.com/i/s0XRY9x1KlOe">https://vocaroo.com/i/s0XRY9x1KlOe</a></p>
+    <form action="/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike"> Yes<br>
+  <input type="checkbox" name="vehicle2" value="Car"> No<br><br>
+  
+  
+  <input type="submit" value="Submit">
+</form>
+
+</crowd-form>
