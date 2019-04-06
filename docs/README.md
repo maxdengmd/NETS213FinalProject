@@ -12,12 +12,18 @@
 8. Final Product: When someone uses our app, they will provide their own rendition of the song, and we will standardize, normalize, and feature extract the data and we will use k-nearest neighbors to figure out the predictive label.(4)
   **Milestone: Final Product**
 
-Quality Control Module:
-- In the src directory, you'll find a screenshot and text file of the template we will be using on Mechanical Turk.
+Quality Control Module for verifying crowdwork:
+- In the src directory, you'll find a screenshot and text file of the QC template we will be using on Mechanical Turk
 - Similar to what we did in class, we have two controls, one negative and one positive.
 - We will be using a weighted majority vote.
 - To determine whether a worker is qualifiable or not, he or she must select "Yes" for the positive quality control and "No" for the negative quality control
 - We justify this qualification because workers must be able to tell whether songs resemble the original or not to set up an accurate database
 - Each recording will be listened to 3 times, and the good samples will be allowed to pass for aggregation
+- In the final project, we must ensure that the input .csv is properly configured with five columns, where there will be two columns of control and three columns of samples to be verified
+- To make it better, the order of samples and control will be randomized on the HIT
 - Hopefully, this will give us at least 40 samples to use
 
+Aggregation Module:
+- Following the preliminary data collection where crowdworkers are asked to hum back a song they have just heard, we will aggregate the data into an intermediate .csv file to feed into the quality control module
+- This step will aggregate all the samples based on the song title
+- There will also be positive and negative control data provided by us into the intermedia .csv file
