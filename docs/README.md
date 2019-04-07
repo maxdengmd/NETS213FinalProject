@@ -11,7 +11,49 @@
 7. ML Training: Create a training data set, of audio being the data and song being the label. (2)
 8. Final Product: When someone uses our app, they will provide their own rendition of the song, and we will standardize, normalize, and feature extract the data and we will use k-nearest neighbors to figure out the predictive label.(4)
   **Milestone: Final Product**
+  
+----------------------------------------------------------------------------------------------------------------------------------------
+  DATA:
+  
+  #input original data into HIT
+  
+0	1
+0	TestSong1	https://www.youtube.com/watch?v=AgFeZr5ptV8
+1	TestSong1	https://www.youtube.com/watch?v=WA4iX5D9Z64
 
+ #output from worker HIT
+ 
+ WorkerId	NameOfSong	RecordingLink
+0	2	TestSong1	https://vocaroo.com/i/s1nPB5qtYeQI
+1	1	TestSong1	https://vocaroo.com/i/s0ITpZOTVYmF
+2	3	TestSong2	https://vocaroo.com/i/s1YhADhsJQD7
+3	4	TestSong2	https://vocaroo.com/i/s1XDLqC9Gxvh
+
+ #sort by song
+ 
+ WorkerId	NameOfSong	RecordingLink
+0	1	TestSong1	https://vocaroo.com/i/s0ITpZOTVYmF
+1	2	TestSong1	https://vocaroo.com/i/s1nPB5qtYeQI
+2	3	TestSong2	https://vocaroo.com/i/s1YhADhsJQD7
+3	4	TestSong2	https://vocaroo.com/i/s1XDLqC9Gxvh
+
+#aggregate data to create HITS for QC workers
+#each HIT includes three of the links of a particular song and quality control
+
+HIT	NameOfSong	RecordingLink1	RecordingLink2	RecordingLink3	Pos_Qual_Ctrl	Neg_Qual_Ctrl
+0	1	TestSong1	https://vocaroo.com/i/s0ITpZOTVYmF	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI
+1	2	TestSong2	https://vocaroo.com/i/s0ITpZOTVYmF	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI
+
+#output from QC HIT
+
+HIT	NameOfSong	Input.RecordingLink1	Input.RecordingLink2	Input.RecordingLink3	Input.Pos_Qual_Ctrl	Input.Neg_Qual_Ctrl	Answer.RecordingLink1	Answer.RecordingLink2	Answer.RecordingLink3	Answer.Pos_Qual_Ctrl	Answer.Neg_Qual_Ctrl
+0	1	TestSong1	https://vocaroo.com/i/s0ITpZOTVYmF	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	Yes	Yes	No	Yes	No
+1	2	TestSong2	https://vocaroo.com/i/s0ITpZOTVYmF	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	https://vocaroo.com/i/s1nPB5qtYeQI	Yes	Yes	No	Yes	No
+
+#For each row, if the quality control questions pass (answer to pos_qual_ctrl==yes and answer to pos_qual_ctrl==no), then take the link, download the file and add it to the training dataset for our ML algorithm (song name is the label)
+
+  
+----------------------------------------------------------------------------------------------------------------------------------------
 Quality Control Module for verifying crowdwork:
 - In the src directory, you'll find a screenshot and text file of the QC template we will be using on Mechanical Turk
 - Similar to what we did in class, we have two controls, one negative and one positive.
