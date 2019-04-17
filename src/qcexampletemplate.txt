@@ -18,37 +18,37 @@
     <p>Original Song: ${song_name}</p>
     <b>Start Time: ${start_time}</b>
     <b>End Time: ${end_time}</b>
-    <p><a href="${links}">${links}</a></p>
+    <p><a href="${links}" target="_blank">${links}</a></p>
     
     <br>
     
     
     <b>Example 1:</b>
-    <p><a href="https://vocaroo.com/i/ex1">https://vocaroo.com/i/ex1</a></p>
+    <p><a href="https://vocaroo.com/i/ex1" target="_blank">https://vocaroo.com/i/ex1</a></p>
     <form action="/action_page.php">
   <input type="checkbox" name="ex1yes" value="Yes"> Yes<br>
   <input type="checkbox" name="ex1no" value="No"> No<br><br>
     
     <b>Example 2:</b>
-    <p><a href="https://vocaroo.com/i/ex2">https://vocaroo.com/i/ex2</a></p>
+    <p><a href="https://vocaroo.com/i/ex2" target="_blank">https://vocaroo.com/i/ex2</a></p>
     <form action="/action_page.php">
   <input type="checkbox" name="ex2yes" value="Yes"> Yes<br>
   <input type="checkbox" name="ex2no" value="No"> No<br><br>
     
     <b>Example 3:</b>
-    <p><a href="https://vocaroo.com/i/ex3">https://vocaroo.com/i/ex3</a></p>
+    <p><a href="https://vocaroo.com/i/ex3" target="_blank">https://vocaroo.com/i/ex3</a></p>
     <form action="/action_page.php">
   <input type="checkbox" name="ex3yes" value="Yes"> Yes<br>
   <input type="checkbox" name="ex3no" value="No"> No<br><br>
   
     <b>Example 4:</b>
-    <p><a href="https://vocaroo.com/i/ex4">https://vocaroo.com/i/ex4</a></p>
+    <p><a href="https://vocaroo.com/i/ex4" target="_blank">https://vocaroo.com/i/ex4</a></p>
     <form action="/action_page.php">
   <input type="checkbox" name="ex4yes" value="Yes"> Yes<br>
   <input type="checkbox" name="ex4no" value="No"> No<br><br>
   
     <b>Example 5:</b>
-    <p><a href="https://vocaroo.com/i/ex5">https://vocaroo.com/i/ex5</a></p>
+    <p><a href="https://vocaroo.com/i/ex5" target="_blank">https://vocaroo.com/i/ex5</a></p>
     <form action="/action_page.php">
   <input type="checkbox" name="ex5yes" value="Yes"> Yes<br>
   <input type="checkbox" name="ex5no" value="No"> No<br><br>
