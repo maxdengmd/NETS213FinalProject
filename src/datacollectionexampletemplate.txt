@@ -8,7 +8,6 @@
 <crowd-form answer-format="flatten-objects">
     
     <h3>Instructions:</h3>
-    <p>Please go somewhere quiet to record your hums</p>
     <p>You will need a <b>microphone</b> on your computer and <b>Flash Player</b> on your browser to do this HIT</p>
     <p>Below is a link to the song we want you to hum. Please watch the Youtube link from the specified start time to end time</p>
     <p>Then click on the link to vocaroo and record yourself humming. </p>
@@ -18,10 +17,10 @@
     
     <br>
     <br>
-    <p><a href="https://s3.amazonaws.com/nets213-hum/closed.m4a">This is an example of closed mouth humming</a></p>
+    <p><a href="https://s3.amazonaws.com/nets213-hum/closed.m4a" target="_blank">This is an example of closed mouth humming</a></p>
     
     <br>
-    <p><a href="https://s3.amazonaws.com/nets213-hum/open.m4a">This is an example of OPEN mouth humming</a></p>
+    <p><a href="https://s3.amazonaws.com/nets213-hum/open.m4a" target="_blank">This is an example of OPEN mouth humming</a></p>
     
     <b>Please do open mouth humming for this HIT!</b>
     
@@ -42,7 +41,7 @@
     <b>Click this link to record. Please select allow microphone and enable Flash Player</b>
     <p>Once you are satsified with your recording you will see a box that says "Happy with this recording?"</p>
     <p>Then click "Click here to save" and copy the resulting link</p>
-    <p><a href="https://vocaroo.com">https://vocaroo.com</a></p>
+    <p><a href="https://vocaroo.com" target="_blank">https://vocaroo.com</a></p>
     
     <br>
     
