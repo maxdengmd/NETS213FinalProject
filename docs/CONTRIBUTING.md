@@ -12,9 +12,9 @@ To visit our code, please visit the github repository at https://github.com/maxd
 # Contributing Code
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-#Reporting Issues
+# Reporting Issues
 Please report all issues to our github repository.
 
-#General Inquiries
+# General Inquiries
 If you have any other general questions or commments about JukeBox (ie how to contribute, origins of idea, product recommendations, etc.) please direct them to pranabk@seas.upenn.edu.
 
